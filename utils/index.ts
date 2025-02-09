@@ -9,7 +9,7 @@ export async function fetchCars(filters: FilterProps){
         'x-rapidapi-key': '550149cc7emshbf11af70ee9d0fdp1f28fcjsncde337290a62',
         'x-rapidapi-host': 'cars-by-api-ninjas.p.rapidapi.com'
       }
-      const response = await fetch(`https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&limit=${limit}&fuel_type=${fuel}`, {
+      const response = await fetch(`https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&year=${year}&model=${model}&fuel_type=${fuel}`, {
         headers:headers,
       }) ;
       const result = await response.json();
